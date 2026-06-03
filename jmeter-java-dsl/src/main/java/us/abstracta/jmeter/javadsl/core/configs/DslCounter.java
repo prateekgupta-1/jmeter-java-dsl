@@ -143,7 +143,7 @@ public class DslCounter extends BaseConfigElement {
       ret.chain("increment", paramBuilder.longParam("incr", 1L));
       ret.chain("maximumValue", paramBuilder.longParam("end", Long.MAX_VALUE));
       ret.chain("perThread", paramBuilder.boolParam("per_user", false));
-      ret.chain("resetOnEachIteration", paramBuilder.boolParam("reset_on_each_iteration", false));
+      ret.chain("resetOnEachIteration", paramBuilder.boolParam("reset_on_tg_iteration", false));
       return ret;
     }
 
