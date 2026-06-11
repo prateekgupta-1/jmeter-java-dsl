@@ -60,6 +60,7 @@ public class DslCounterTest extends JmeterDslTest {
             counter("MY_COUNTER")
                     .startingValue(startingValue)
                     .increment(increment)
+                    .perThread(true)
                     .resetOnEachIteration(true),
                     httpSampler(wiremockUri + "/${MY_COUNTER}")
             )
